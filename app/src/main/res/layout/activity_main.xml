@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F9FAFB"
+    tools:context=".MainActivity">
+
+    <ImageView
+    android:id="@+id/app_icon"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:src="@drawable/quiz_24px"
+    android:layout_marginBottom="16dp"
+    app:tint="#6B7280" />
+
+    <TextView
+    android:id="@+id/app_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/quizz_app_name"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:textColor="#111827"
+    android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/app_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_slogan"
+        android:textSize="14sp"
+        android:textColor="#6B7280"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_quizz_label"
+        android:textColor="@color/primary_text_color"
+        android:backgroundTint="@color/primary_color"
+        app:rippleColor="@color/primary_ripple_color"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/button_view_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_history_quizz_label"
+        android:textColor="@color/secondary_text_color"
+        app:rippleColor="@color/secondary_ripple_color"
+        android:backgroundTint="@color/secondary_color" />
+
+</LinearLayout>
