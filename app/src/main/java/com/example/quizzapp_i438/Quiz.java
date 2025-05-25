@@ -132,7 +132,7 @@ public class Quiz extends AppCompatActivity {
                                     current_question.get_correct_answer()
                             );
                         }
-
+                        submit_answer_button.setText(R.string.submit_quiz_label);
                         load_fragment(fragment);
                     }
                 }
