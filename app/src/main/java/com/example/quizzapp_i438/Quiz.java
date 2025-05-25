@@ -101,6 +101,7 @@ public class Quiz extends AppCompatActivity {
                     if (question_index == question_list.size()) {
                         score_storage.saveQuizScore(correct_answers);
                         question_number_label.setVisibility(View.INVISIBLE);
+                        submit_answer_button.setVisibility(View.INVISIBLE);
                         Fragment result_fragment = QuizResultFragment.newInstance(correct_answers);
                         load_fragment(result_fragment);
                     } else {
